@@ -42,7 +42,6 @@
 	  master_password        = data.aws_ssm_parameter.master_password.value
 	  vpc_security_group_ids = [aws_security_group.main.id]
 	  skip_final_snapshot    = true
-	  kms_key_id             = var.kms_key_id
   	  storage_encrypted      = true
 	}
 	
